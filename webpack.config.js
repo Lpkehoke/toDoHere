@@ -13,6 +13,7 @@ let config = {
         main: [
             './hereMaps/core.js',
             './hereMaps/service.js',
+            './scss/index.scss',
             './node_modules/bootstrap/scss/bootstrap.scss',
             '@babel/polyfill',
             './src/index.js'

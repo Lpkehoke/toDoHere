@@ -8,8 +8,7 @@ const Provider = ReactRedux.Provider;
 const setting = require('!./settings/defaultSetting.json');
 const rootReducer = (require('./reducers/getRootReducer.js'))(setting);
 
-const Header =  require('./components/header/header.jsx');
-const MapContainer = require('./components/mapContainer/mapContainer.jsx');
+const App = require('./components/app.jsx');
 
 class toDoHere {
     constructor(selector = '#root') {
@@ -20,8 +19,7 @@ class toDoHere {
 
         ReactDom.render(
             <Provider store={this._store}>
-                    <Header />
-                    <MapContainer />
+                <App />
             </Provider>,
             this._mountPoint
         );

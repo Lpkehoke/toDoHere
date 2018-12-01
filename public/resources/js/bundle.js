@@ -19717,6 +19717,25 @@ exports.push([module.i, "/*!\n * Bootstrap v4.1.3 (https://getbootstrap.com/)\n 
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/index.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js!./scss/index.scss":
+/*!****************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader!./node_modules/postcss-loader/src??ref--5-2!./node_modules/sass-loader/lib/loader.js!./scss/index.scss ***!
+  \****************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "html, body, .wrapper, #root {\n  width: 100%;\n  height: 100%; }\n", ""]);
+
+// exports
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/lib/css-base.js":
 /*!*************************************************!*\
   !*** ./node_modules/css-loader/lib/css-base.js ***!
@@ -46973,6 +46992,118 @@ module.exports = function(originalModule) {
 
 /***/ }),
 
+/***/ "./scss/index.scss":
+/*!*************************!*\
+  !*** ./scss/index.scss ***!
+  \*************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../node_modules/css-loader!../node_modules/postcss-loader/src??ref--5-2!../node_modules/sass-loader/lib/loader.js!./index.scss */ "./node_modules/css-loader/index.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js!./scss/index.scss");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
+/***/ "./src/components/app.jsx":
+/*!********************************!*\
+  !*** ./src/components/app.jsx ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var PropTypes = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+
+var Header = __webpack_require__(/*! ./header/header.jsx */ "./src/components/header/header.jsx");
+
+var NewListButton = __webpack_require__(/*! ./menu/NewListButton.jsx */ "./src/components/menu/NewListButton.jsx");
+
+var SmallerCard = __webpack_require__(/*! ./menu/SmallerCard.jsx */ "./src/components/menu/SmallerCard.jsx");
+
+var LargerCard = __webpack_require__(/*! ./menu/LargerCard.jsx */ "./src/components/menu/LargerCard.jsx");
+
+module.exports =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(MapContainer, _React$Component);
+
+  function MapContainer() {
+    _classCallCheck(this, MapContainer);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(MapContainer).apply(this, arguments));
+  }
+
+  _createClass(MapContainer, [{
+    key: "render",
+    value: function render() {
+      return React.createElement("div", {
+        style: {
+          position: 'absolute',
+          width: '100%',
+          height: '100%'
+        }
+      }, React.createElement(Header, null), React.createElement("div", {
+        className: "container",
+        style: {
+          marginTop: '1em'
+        }
+      }, React.createElement(NewListButton, null), React.createElement(SmallerCard, {
+        title: "",
+        items: "",
+        time: ""
+      }), React.createElement(LargerCard, {
+        title: "",
+        items: "",
+        time: ""
+      })));
+    }
+  }]);
+
+  return MapContainer;
+}(React.Component);
+
+/***/ }),
+
 /***/ "./src/components/header/header.jsx":
 /*!******************************************!*\
   !*** ./src/components/header/header.jsx ***!
@@ -47019,7 +47150,24 @@ function (_React$Component) {
   _createClass(Header, [{
     key: "render",
     value: function render() {
-      return React.createElement("div", null);
+      return React.createElement("div", null, React.createElement("nav", {
+        className: "navbar navbar-dark bg-dark"
+      }, React.createElement("a", {
+        className: "navbar-brand",
+        href: "#"
+      }, React.createElement("img", {
+        src: "./../img/logo.png",
+        style: {
+          maxHeight: '2em'
+        },
+        alt: "ToDo Here"
+      })), React.createElement("button", {
+        className: "navbar-toggler collapsed",
+        type: "button",
+        "aria-label": "Toggle navigation"
+      }, React.createElement("span", {
+        className: "navbar-toggler-icon"
+      }))));
     }
   }]);
 
@@ -47028,9 +47176,452 @@ function (_React$Component) {
 
 /***/ }),
 
-/***/ "./src/components/mapContainer/mapContainer.jsx":
+/***/ "./src/components/menu/LargerCard.jsx":
+/*!********************************************!*\
+  !*** ./src/components/menu/LargerCard.jsx ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var CardActionsGroup = __webpack_require__(/*! ./card/cardActionsGroup.jsx */ "./src/components/menu/card/cardActionsGroup.jsx");
+
+var CardTimeCreated = __webpack_require__(/*! ./card/cardTimeCreated.jsx */ "./src/components/menu/card/cardTimeCreated.jsx");
+
+var CardTitle = __webpack_require__(/*! ./card/cardTitle.jsx */ "./src/components/menu/card/cardTitle.jsx");
+
+var CardCollapseButton = __webpack_require__(/*! ./card/cardCollapseButton.jsx */ "./src/components/menu/card/cardCollapseButton.jsx");
+
+var LargerCard =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(LargerCard, _React$Component);
+
+  function LargerCard() {
+    _classCallCheck(this, LargerCard);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(LargerCard).apply(this, arguments));
+  }
+
+  _createClass(LargerCard, [{
+    key: "render",
+    value: function render() {
+      var ret = [];
+      var active = false;
+
+      for (var key in this.props.items) {
+        if (this.props.items[key]) {
+          ret.push(React.createElement(CardExpandedListElement, {
+            distance: this.props.items[key].distance,
+            options: this.props.items[key].options,
+            item: this.props.items[key].item
+          }));
+        }
+      }
+
+      return React.createElement("div", {
+        className: "row"
+      }, React.createElement("div", {
+        className: "col-md-4"
+      }, React.createElement("div", {
+        className: "card mb-4 shadow-sm"
+      }, React.createElement("div", {
+        className: "card-body"
+      }, React.createElement(CardTitle, {
+        title: this.props.title
+      }), React.createElement("div", {
+        className: "list-group"
+      }, ret), React.createElement("div", {
+        className: "d-flex justify-content-between align-items-center",
+        style: {
+          marginTop: '1em'
+        }
+      }, React.createElement("div", {
+        className: "row"
+      }, React.createElement("div", {
+        className: "col"
+      }, React.createElement(CardActionsGroup, null))), React.createElement("div", {
+        className: "row"
+      }, React.createElement("div", {
+        className: "col"
+      }, React.createElement("div", {
+        className: "container"
+      }, React.createElement(CardTimeCreated, {
+        time: this.props.time
+      }))), React.createElement("div", {
+        className: "col"
+      }, React.createElement(CardCollapseButton, null))))))));
+    }
+  }]);
+
+  return LargerCard;
+}(React.Component);
+
+module.exports = LargerCard;
+
+/***/ }),
+
+/***/ "./src/components/menu/NewListButton.jsx":
+/*!***********************************************!*\
+  !*** ./src/components/menu/NewListButton.jsx ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var NewListButton =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(NewListButton, _React$Component);
+
+  function NewListButton() {
+    _classCallCheck(this, NewListButton);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(NewListButton).apply(this, arguments));
+  }
+
+  _createClass(NewListButton, [{
+    key: "render",
+    value: function render() {
+      return React.createElement("div", {
+        className: "row",
+        style: {
+          marginBottom: '1em'
+        }
+      }, React.createElement("div", {
+        className: "col-md-4"
+      }, React.createElement("button", {
+        type: "button",
+        className: "btn btn-outline-primary btn-lg btn-block"
+      }, "Create new list")));
+    }
+  }]);
+
+  return NewListButton;
+}(React.Component);
+
+module.exports = NewListButton;
+
+/***/ }),
+
+/***/ "./src/components/menu/SmallerCard.jsx":
+/*!*********************************************!*\
+  !*** ./src/components/menu/SmallerCard.jsx ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var CardTitle = __webpack_require__(/*! ./card/cardTitle.jsx */ "./src/components/menu/card/cardTitle.jsx");
+
+var CardTimeCreated = __webpack_require__(/*! ./card/cardTimeCreated.jsx */ "./src/components/menu/card/cardTimeCreated.jsx");
+
+var CardExpandButton = __webpack_require__(/*! ./card/cardExpandButton.jsx */ "./src/components/menu/card/cardExpandButton.jsx");
+
+var SmallerCard =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(SmallerCard, _React$Component);
+
+  function SmallerCard() {
+    _classCallCheck(this, SmallerCard);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(SmallerCard).apply(this, arguments));
+  }
+
+  _createClass(SmallerCard, [{
+    key: "render",
+    value: function render() {
+      var ret = [];
+      var active = false;
+
+      for (var key in this.props.items) {
+        if (this.props.items[key]) {
+          ret.push(React.createElement(CardButton, {
+            name: this.props.items[key]
+          }));
+        }
+      }
+
+      return React.createElement("div", {
+        className: "row"
+      }, React.createElement("div", {
+        className: "col-md-4"
+      }, React.createElement("div", {
+        className: "card mb-4 shadow-sm"
+      }, React.createElement("div", {
+        className: "card-body"
+      }, React.createElement(CardTitle, {
+        title: this.props.title
+      }), ret, React.createElement("div", {
+        className: "d-flex justify-content-between align-items-center",
+        style: {
+          marginTop: '1em'
+        }
+      }, React.createElement(CardTimeCreated, {
+        time: this.props.time
+      }), React.createElement(CardExpandButton, null))))));
+    }
+  }]);
+
+  return SmallerCard;
+}(React.Component);
+
+module.exports = SmallerCard;
+
+/***/ }),
+
+/***/ "./src/components/menu/card/cardActionsGroup.jsx":
+/*!*******************************************************!*\
+  !*** ./src/components/menu/card/cardActionsGroup.jsx ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var CardActionsGroup =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(CardActionsGroup, _React$Component);
+
+  function CardActionsGroup() {
+    _classCallCheck(this, CardActionsGroup);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(CardActionsGroup).apply(this, arguments));
+  }
+
+  _createClass(CardActionsGroup, [{
+    key: "render",
+    value: function render() {
+      return React.createElement("div", {
+        className: "btn-group"
+      }, React.createElement("button", {
+        type: "button",
+        className: "btn btn-sm btn-outline-secondary"
+      }, "Share"), React.createElement("button", {
+        type: "button",
+        className: "btn btn-sm btn-outline-secondary"
+      }, "Edit"), React.createElement("button", {
+        type: "button",
+        className: "btn btn-sm btn-outline-secondary btn-danger"
+      }, "Remove"));
+    }
+  }]);
+
+  return CardActionsGroup;
+}(React.Component);
+
+module.exports = CardActionsGroup;
+
+/***/ }),
+
+/***/ "./src/components/menu/card/cardCollapseButton.jsx":
+/*!*********************************************************!*\
+  !*** ./src/components/menu/card/cardCollapseButton.jsx ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var CardCollapseButton =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(CardCollapseButton, _React$Component);
+
+  function CardCollapseButton() {
+    _classCallCheck(this, CardCollapseButton);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(CardCollapseButton).apply(this, arguments));
+  }
+
+  _createClass(CardCollapseButton, [{
+    key: "render",
+    value: function render() {
+      return React.createElement("a", {
+        className: "text-muted",
+        href: "#"
+      }, "Collapse");
+    }
+  }]);
+
+  return CardCollapseButton;
+}(React.Component);
+
+module.exports = CardCollapseButton;
+
+/***/ }),
+
+/***/ "./src/components/menu/card/cardExpandButton.jsx":
+/*!*******************************************************!*\
+  !*** ./src/components/menu/card/cardExpandButton.jsx ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var CardExpandButton =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(CardExpandButton, _React$Component);
+
+  function CardExpandButton() {
+    _classCallCheck(this, CardExpandButton);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(CardExpandButton).apply(this, arguments));
+  }
+
+  _createClass(CardExpandButton, [{
+    key: "render",
+    value: function render() {
+      return React.createElement("a", {
+        className: "text-muted",
+        href: "#"
+      }, "Expand");
+    }
+  }]);
+
+  return CardExpandButton;
+}(React.Component);
+
+module.exports = CardExpandButton;
+
+/***/ }),
+
+/***/ "./src/components/menu/card/cardTimeCreated.jsx":
 /*!******************************************************!*\
-  !*** ./src/components/mapContainer/mapContainer.jsx ***!
+  !*** ./src/components/menu/card/cardTimeCreated.jsx ***!
   \******************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -47058,44 +47649,85 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 
-var PropTypes = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-
-var platform = new H.service.Platform({
-  'app_id': '0zXQr4Txf0nXwkmIG4EO',
-  'app_code': '7S0HtftT0orcRx9BAfYPXQ'
-});
-
-module.exports =
+var CardTimeCreated =
 /*#__PURE__*/
 function (_React$Component) {
-  _inherits(MapContainer, _React$Component);
+  _inherits(CardTimeCreated, _React$Component);
 
-  function MapContainer() {
-    _classCallCheck(this, MapContainer);
+  function CardTimeCreated() {
+    _classCallCheck(this, CardTimeCreated);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(MapContainer).apply(this, arguments));
+    return _possibleConstructorReturn(this, _getPrototypeOf(CardTimeCreated).apply(this, arguments));
   }
 
-  _createClass(MapContainer, [{
+  _createClass(CardTimeCreated, [{
     key: "render",
     value: function render() {
-      // var defaultLayers = platform.createDefaultLayers();
-      // var map = new H.Map(
-      // document.getElementById('mapContainer'),
-      // defaultLayers.normal.map,
-      // {
-      // zoom: 10,
-      // center: { lat: 52.5, lng: 13.4 }
-      // });
-      return React.createElement("div", null);
+      return React.createElement("small", {
+        className: "text-muted"
+      }, this.props.time, " minutes ago");
     }
-  }, {
-    key: "componentDidMount",
-    value: function componentDidMount() {}
   }]);
 
-  return MapContainer;
+  return CardTimeCreated;
 }(React.Component);
+
+module.exports = CardTimeCreated;
+
+/***/ }),
+
+/***/ "./src/components/menu/card/cardTitle.jsx":
+/*!************************************************!*\
+  !*** ./src/components/menu/card/cardTitle.jsx ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var CardTitle =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(CardTitle, _React$Component);
+
+  function CardTitle() {
+    _classCallCheck(this, CardTitle);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(CardTitle).apply(this, arguments));
+  }
+
+  _createClass(CardTitle, [{
+    key: "render",
+    value: function render() {
+      return React.createElement("h5", null, this.props.title);
+    }
+  }]);
+
+  return CardTitle;
+}(React.Component);
+
+module.exports = CardTitle;
 
 /***/ }),
 
@@ -47125,9 +47757,7 @@ var setting = __webpack_require__(/*! ./settings/defaultSetting.json */ "./src/s
 
 var rootReducer = __webpack_require__(/*! ./reducers/getRootReducer.js */ "./src/reducers/getRootReducer.js")(setting);
 
-var Header = __webpack_require__(/*! ./components/header/header.jsx */ "./src/components/header/header.jsx");
-
-var MapContainer = __webpack_require__(/*! ./components/mapContainer/mapContainer.jsx */ "./src/components/mapContainer/mapContainer.jsx");
+var App = __webpack_require__(/*! ./components/app.jsx */ "./src/components/app.jsx");
 
 var toDoHere = function toDoHere() {
   var selector = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '#root';
@@ -47140,7 +47770,7 @@ var toDoHere = function toDoHere() {
   }));
   ReactDom.render(React.createElement(Provider, {
     store: this._store
-  }, React.createElement(Header, null), React.createElement(MapContainer, null)), this._mountPoint);
+  }, React.createElement(App, null)), this._mountPoint);
 };
 
 var paint = new toDoHere('#root');
@@ -47240,14 +47870,15 @@ module.exports = function CardStruct(discription) {
 /***/ }),
 
 /***/ 0:
-/*!**********************************************************************************************************************************!*\
-  !*** multi ./hereMaps/core.js ./hereMaps/service.js ./node_modules/bootstrap/scss/bootstrap.scss @babel/polyfill ./src/index.js ***!
-  \**********************************************************************************************************************************/
+/*!****************************************************************************************************************************************************!*\
+  !*** multi ./hereMaps/core.js ./hereMaps/service.js ./scss/index.scss ./node_modules/bootstrap/scss/bootstrap.scss @babel/polyfill ./src/index.js ***!
+  \****************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! ./hereMaps/core.js */"./hereMaps/core.js");
 __webpack_require__(/*! ./hereMaps/service.js */"./hereMaps/service.js");
+__webpack_require__(/*! ./scss/index.scss */"./scss/index.scss");
 __webpack_require__(/*! ./node_modules/bootstrap/scss/bootstrap.scss */"./node_modules/bootstrap/scss/bootstrap.scss");
 __webpack_require__(/*! @babel/polyfill */"./node_modules/@babel/polyfill/lib/index.js");
 module.exports = __webpack_require__(/*! ./src/index.js */"./src/index.js");

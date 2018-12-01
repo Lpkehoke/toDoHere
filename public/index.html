@@ -5,11 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>toDoHere</title>
+    <script src="http://js.api.here.com/v3/3.0/mapsjs-core.js"
+    type="text/javascript" charset="utf-8"></script>
+    <script src="http://js.api.here.com/v3/3.0/mapsjs-service.js"
+    type="text/javascript" charset="utf-8"></script>
+    <script src="http://js.api.here.com/v3/3.0/mapsjs-ui.js"
+    type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-mapevents.js"></script>
+    <link rel="stylesheet" type="text/css" ref="http://js.api.here.com/v3/3.0/mapsjs-ui.css" />
+
 </head>
 <body>
     <div class="wrapper">
         <div id="root"></div>
+        <div id="mapC"></div>
     </div>
+
     <script type="text/javascript" src="resources/js/bundle.js"></script>
+    <script>
+      var platform = new H.service.Platform({
+        'app_id': '0zXQr4Txf0nXwkmIG4EO',
+        'app_code': '7S0HtftT0orcRx9BAfYPXQ'
+      });
+
+      var maptypes = platform.createDefaultLayers();
+
+      var map = new H.Map(
+      document.getElementById('mapC'),
+      maptypes.normal.map,
+      {
+        zoom: 10,
+        center: { lng: 20.28, lat: 44.8 }
+      });
+
+      var behavior = new H.mapevents.Behavior(new H.mapevents.MapEvents(map));
+
+      var ui = H.ui.UI.createDefault(map, maptypes, 'de-DE');
+      ui.getControl('zoom').setEnabled(true)
+    </script>
 </body>
 </html>
